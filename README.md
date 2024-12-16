@@ -13,17 +13,5 @@ Antes de ejecutar la API, asegúrate de cumplir con los siguientes requisitos:
 Ejecuta el script SQL incluido en este repositorio para configurar la base de datos. Este script crea la tabla `Room` necesaria para que la API funcione correctamente.
 
 1. Abre tu herramienta de gestión de bases de datos (como SQL Server Management Studio).
-2. Carga y ejecuta el archivo SQL proporcionado (`create_room_table.sql`).
+2. En el archivo subido al aula vistual al final del documento se encuentra el scirpt de la base de datos, copialo y ejecutalo.
 
-### Script SQL
-
-A continuación, un ejemplo del script SQL necesario:
-
-```sql
-CREATE TABLE Room (
-    Id INT PRIMARY KEY IDENTITY(1,1),
-    Name NVARCHAR(100) NOT NULL,
-    Capacity INT NOT NULL,
-    Price DECIMAL(18, 2) NOT NULL,
-    Status NVARCHAR(50) NOT NULL
-);
